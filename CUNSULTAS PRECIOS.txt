@@ -1,0 +1,59 @@
+CONSULTA GENERAL PARA CONSULTAR BOLETOS
+SELECT * FROM `codigo` WHERE `codigo` >= '002001' and `codigo` <= '003000'
+
+CONSULTA PARA REINICIAR TODOS LOS BOLETOS A NO VENDIDOS
+UPDATE `codigo` SET `vendido`= 0 WHERE `vendido` = 1
+
+CONSULTA GENERAL PARA ACTUALIZAR PRECIOS
+UPDATE `codigo` SET `precio`= 200 WHERE `codigo` >= '002001' and `codigo` <= '003000'
+
+CONSULTA PARA PONER NOMBRE DE GRUPO
+UPDATE `codigo` SET `evento`= 'CLAVE NUEVA' WHERE `codigo` >= '002001' and `codigo` <= '005000'
+
+
+
+
+CLAVE NUEVA
+CONSULTAS PARA ACTUALIZAR PRECIOS DE PREVENTA 200
+DEL 002001 AL 003000	1000 BOLETOS
+UPDATE `codigo` SET `precio`= 200 WHERE `codigo` >= '002001' and `codigo` <= '003000'
+
+CONSULTAS PARA ACTUALIZAR PRECIOS DE TAQUILLA 250
+DEL 003001 AL 004500	1500 BOLETOS
+UPDATE `codigo` SET `precio`= 250 WHERE `codigo` >= '003001' and `codigo` <= '004500'
+
+CONSULTAS PARA ACTUALIZAR PRECIOS DE TAQUILLA  EXTRA 0
+UPDATE `codigo` SET `precio`= 0 WHERE `codigo` >= '004501' and `codigo` <= '005000'
+
+
+
+
+CHUY LIZARRAGA
+CONSULTAS PARA ACTUALIZAR PRECIOS DE PREVENTA 250
+DEL 005501 AL 006500	1000 BOLETOS
+UPDATE `codigo` SET `precio`= 250, evento = 'CHUY LIZARRAGA' WHERE `codigo` >= '005501' and `codigo` <= '006500'
+
+TAQUILLA CHUY LIZARRAGA TAQUILLA 300
+DEL 006501 AL 008000	1500 BOLETOS
+UPDATE `codigo` SET `precio`= 300, evento = 'CHUY LIZARRAGA' WHERE `codigo` >= '006501' and `codigo` <= '008000'
+
+CHUY LIZARRAGA PRECIOS DE TAQUILLA EXTRA 0
+DEL 008001 AL 008500	500 BOLETOS
+UPDATE `codigo` SET `precio`= 0, evento = 'CHUY LIZARRAGA' WHERE `codigo` >= '008001' and `codigo` <= '008500'
+
+
+UPDATE `codigo` SET `precio`= 200, evento = 'CONCURSO DE CABALLOS' WHERE `codigo` >= '000001' and `codigo` <= '001000'
+
+UPDATE `codigo` SET `precio`= 200, evento = 'CONCURSO DE CABALLOS' WHERE `id` >= 3407 and `id` <= 4405
+
+UPDATE `codigo` SET `precio`= 100, evento = 'CONCURSO DE CABALLOS' WHERE `codigo` >= '08831' and `codigo` <= '10290'
+
+UPDATE `codigo` SET `precio`= 150, evento = 'CLAVE NUEVA' WHERE `codigo` >= '05801' and `codigo` <= '06300'
+
+UPDATE `codigo` SET `precio`= 150, evento = 'CHUY LIZARRAGA' WHERE `codigo` >= '01061' and `codigo` <= '02060'
+
+
+
+
+SELECT * FROM CODIGO WHERE `id` >= 3407 and `id` <= 4406
+4407-5406
